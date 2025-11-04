@@ -39,5 +39,9 @@ public class StudentEncapsulation {
         }
     }
 
+    public void setAge(int age){
+
+    }
+
 
 }
