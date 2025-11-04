@@ -1,14 +1,14 @@
-public class StudentEncapsulation {
+public class StudentEnrolment {
     // learning encapsulation
 
     private String name;
     private int studentId;
     private int age;
 
-    public StudentEncapsulation(String name, int studentId, int age) {
+    public StudentEnrolment(String name, int studentId, int age) {
         setName(name);
         setStudentId(studentId);
-        //setAge(age);
+        setAge(age);
     }
 
     public String getName() {
@@ -24,7 +24,7 @@ public class StudentEncapsulation {
     }
 
     public void setName(String name) {
-        if (this.name != null && !this.name.trim().isEmpty()){
+        if (name != null && !name.trim().isEmpty()){
             this.name = name;
         } else {
             System.out.println("Name field cannot be empty!");
@@ -32,7 +32,7 @@ public class StudentEncapsulation {
     }
 
     public void setStudentId(int studentId){
-        if (this.studentId > 0){
+        if (studentId > 0){
             this.studentId = studentId;
         } else {
             System.out.println("Student ID cannot be negative!");
@@ -40,7 +40,11 @@ public class StudentEncapsulation {
     }
 
     public void setAge(int age){
-
+        if (age >= 18 && age <= 60) {
+            this.age = age;
+        } else {
+            System.out.println("Age is invalid!");
+        }
     }
 
 
