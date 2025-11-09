@@ -14,7 +14,7 @@ public class Wolf extends Animal{
         System.out.println(getName() + " barks Whoof!");
     }
 
-    @Override
+    @Override // Overriding (Runtime)
     public void makeSound() {
         System.out.println(getName() + " says: Bark!");
     }
