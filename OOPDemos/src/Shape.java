@@ -12,7 +12,7 @@ public abstract class Shape {
         return color;
     }
 
-    public String getTypee(){
+    public String getType(){
         return type;
     }
 
@@ -21,6 +21,6 @@ public abstract class Shape {
 
     // concrete method
     public void displayColor(){
-        System.out.println(name + "'s color is: " + color);
+        System.out.println(type + "'s color is: " + color);
     }
 }

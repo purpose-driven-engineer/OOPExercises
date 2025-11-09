@@ -1,9 +1,10 @@
 public class Rectangle extends Shape{
     private double length;
     private double width;
+    private String type;
 
-    public Rectangle(String color, double length, double width){
-        super(color);
+    public Rectangle(String color, String type, double length, double width){
+        super(color, type);
         this.length = length;
         this.width = width;
     }
@@ -21,5 +22,9 @@ public class Rectangle extends Shape{
 
     public double getWidth(){
         return width;
+    }
+
+    public String getType(){
+        return type;
     }
 }

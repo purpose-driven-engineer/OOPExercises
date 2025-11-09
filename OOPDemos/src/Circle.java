@@ -1,9 +1,10 @@
 // concrete subclass of Shape
 public class Circle extends Shape {
     private double radius;
+    private String type;
 
-    public Circle(String color, double radius){
-        super(color);
+    public Circle(String color, double radius, String type){
+        super(color, type);
         this.radius = radius;
     }
 

@@ -4,8 +4,8 @@ public class GeometryCalculator {
 
         // abstract classes can't be instantiated
 
-        Circle circle = new Circle("Red", 4.5);
-        Rectangle rectangle = new Rectangle("Green", 3.4, 5.8);
+        Circle circle = new Circle("Red", 4.5, "Circle");
+        Rectangle rectangle = new Rectangle("Green", "Rectangle", 3.4, 5.8);
 
         //polymorphic abstraction
         Shape[] shapes = new Shape[2];
